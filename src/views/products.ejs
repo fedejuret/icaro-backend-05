@@ -8,7 +8,27 @@
 </head>
 <body>
     
-    <h1>Todo funciona como deberia</h1>
+    <h1>Cargar un producto</h1>
+
+    <form action="/cargar-producto-backend" method="POST">
+
+        <label for="product_name">Nombre del producto</label>
+        <input type="text" name="product_name" id="product_name">
+
+        <label for="product_description">Descripcion corta</label>
+        <input type="text" name="product_description" id="product_description" max="50">
+
+        <label for="product_long_description">Descripcion completa</label>
+        <textarea name="product_long_description" id="product_long_description" cols="30" rows="10"></textarea>
+        
+        <label for="product_price">Precio del producto</label>
+        <input type="number" id="product_price" name="product_price" min="1">
+
+
+        <button type="submit">Crear producto</button>
+
+
+    </form>
 
 </body>
 </html>
